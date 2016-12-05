@@ -20,6 +20,13 @@ public class MainReader {
      * @param args
      */
     public static void main(String[] args) {
+        readFile();
+    }
+
+    /**
+     * Метод для чтения дат из файла
+     */
+    public static void readFile() {
         //Открываем потоки на чтение из файла
         FileReader reader = new FileReader("file.txt");
         BufferedReader byfReader = new BufferedReader(reader);
