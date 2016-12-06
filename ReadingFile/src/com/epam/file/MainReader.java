@@ -16,6 +16,12 @@ public class MainReader {
     private static final String DATE_FORMAT_PATTERN = "dd.MM.yyyy";
 
     /**
+     * Форматтер, используется для преобразования строк в даты и обратно
+     */
+    private static SimpleDateFormat dateFormatter = new SimpleDateFormat(DATE_FORMAT_PATTERN);
+
+
+    /**
      * Точка входа в программу
      * @param args
      */
@@ -53,7 +59,6 @@ public class MainReader {
      * @return
      */
     public static Date parseDate(String strDate) {
-        SimpleDateFormat dateFormatter = new SimpleDateFormat(DATE_FORMAT_PATTERN);
         return dateFormatter.parse(strDate);
     }
 }
